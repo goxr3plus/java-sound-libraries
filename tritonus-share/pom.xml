@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>soundlibs</artifactId>
+        <groupId>com.googlecode.soundlibs</groupId>
+        <version>1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>tritonus-share</artifactId>
+    <version>0.3.7-SNAPSHOT</version>
+    <packaging>bundle</packaging>
+    <name>tritonus-share</name>
+    <description>Maven artifact for tritonus-share library of tritonus.org</description>
+    
+    <developers>
+        <developer>
+            <name>Florian Bomers</name>
+            <organizationUrl>http://tritonus.org</organizationUrl>
+            <roles><role>Original Author</role></roles>            
+            <url>http://www.bomers.de</url>
+         </developer>
+        <developer>
+            <name>Patrik Duditš</name>
+            <email>soundlibs@dudits.net</email>
+            <url>http://pato.dudits.net/</url>
+            <roles>
+                <role>Packager</role>
+            </roles>
+       </developer>         
+    </developers>
+      
+    <build>
+        <sourceDirectory>../tritonus-cvs/src/classes</sourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>org/tritonus/share/</include>
+                    </includes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>org/tritonus/share/</include>
+                    </includes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <subpackages>org.tritonus.share</subpackages>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+  
+</project>

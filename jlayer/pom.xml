@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.goxr3plus.studio</groupId>
+    <artifactId>jlayer</artifactId>
+    <version>8.0.0</version>
+    <packaging>jar</packaging>
+    <name>JLayer for Java 8++</name>
+    <developers>
+        <developer>
+            <name>JavaZoom</name>
+            <email>jlayer@javazoom.net</email>
+            <organizationUrl>http://www.javazoom.net/javalayer/about.html</organizationUrl>
+            <roles>
+                <role>Original Author</role>
+            </roles>            
+            <url>http://www.javazoom.net/javalayer/javalayer.html</url>
+        </developer>
+        <developer>
+            <name>Patrik Duditš</name>
+            <email>soundlibs@dudits.net</email>
+            <url>http://pato.dudits.net/</url>
+            <roles>
+                <role>Packager</role>
+            </roles>
+       </developer>        
+    </developers>
+      
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>src</directory>
+                <includes><include>**/*.ser</include></includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.2</version>
+        </dependency>
+    </dependencies>
+  
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <description>JLayer implementation for Java8 ++</description>
+</project>
