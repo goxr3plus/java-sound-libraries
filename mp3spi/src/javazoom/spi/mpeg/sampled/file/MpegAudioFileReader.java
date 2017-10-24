@@ -303,8 +303,8 @@ public class MpegAudioFileReader extends TAudioFileReader
     public AudioFileFormat getAudioFileFormat(InputStream inputStream, long mediaLength) throws UnsupportedAudioFileException, IOException
     {
         if (TDebug.TraceAudioFileReader) TDebug.out(">MpegAudioFileReader.getAudioFileFormat(InputStream inputStream, long mediaLength): begin");
-        HashMap aff_properties = new HashMap();
-        HashMap af_properties = new HashMap();
+        HashMap<String,Object> aff_properties = new HashMap<String,Object>();
+        HashMap<String,Comparable> af_properties = new HashMap<String,Comparable>();
         int mLength = (int) mediaLength;
         int size = inputStream.available();
         PushbackInputStream pis = new PushbackInputStream(inputStream, MARK_LIMIT);
@@ -588,7 +588,7 @@ public class MpegAudioFileReader extends TAudioFileReader
      * @param frames
      * @param props
      */
-    protected void parseID3v1Frames(byte[] frames, HashMap props)
+    protected void parseID3v1Frames(byte[] frames, HashMap<String,Object> props)
     {
         if (TDebug.TraceAudioFileReader) TDebug.out("Parsing ID3v1");
         String tag = null;
@@ -660,7 +660,7 @@ public class MpegAudioFileReader extends TAudioFileReader
      * @param frames
      * @param props
      */
-    protected void parseID3v2Frames(InputStream frames, HashMap props)
+    protected void parseID3v2Frames(InputStream frames, HashMap<String,Object> props)
     {
         if (TDebug.TraceAudioFileReader) TDebug.out("Parsing ID3v2");
         byte[] bframes = null;
@@ -809,10 +809,10 @@ public class MpegAudioFileReader extends TAudioFileReader
      * @param props
      * @throws IOException
      */
-    protected void loadShoutcastInfo(InputStream input, HashMap props) throws IOException
+    protected void loadShoutcastInfo(InputStream input, HashMap<String,Object> props) throws IOException
     {
         IcyInputStream icy = new IcyInputStream(new BufferedInputStream(input));
-        HashMap metadata = icy.getTagHash();
+        HashMap<?,?> metadata = icy.getTagHash();
         MP3Tag titleMP3Tag = icy.getTag("icy-name");
         if (titleMP3Tag != null) props.put("title", ((String) titleMP3Tag.getValue()).trim());
         MP3Tag[] meta = icy.getTags();
