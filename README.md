@@ -15,11 +15,11 @@ Because i am using them in many projects like -> [XR3Player](https://github.com/
 Following artifacts are released including source and javadoc artifacts:
 
   * http://tritonus.org[Tritonus share] - utility classes for sound processing
-  * http://www.javazoom.net/javalayer/javalayer.html[JLayer] - MP3 decoder and  encoder 
-  * http://www.javazoom.net/mp3spi/mp3spi.html[MP3SPI] - javax.sound provider for MP3 decoding and encoding based on JLayer
-  * http://www.jcraft.com/jorbis/[JOrbis] - OGG Vorbis decoder and encoder
-  * http://www.javazoom.net/vorbisspi/vorbisspi.html[VorbisSPI] - Service provider for decoding OGG Vorbis
-  * http://www.javazoom.net/jlgui/api.html[BasicPlayer] - BasicPlayer layer is the simple player API of jlGui. These classes are designed to be used in any application that needs simple features (play, stop, pause, resume, seek) to play audio file or stream. It's a high-level API over JavaSound API.
+  * [JLayer]http://www.javazoom.net/javalayer/javalayer.html - MP3 decoder and  encoder 
+  * [MP3SPI]http://www.javazoom.net/mp3spi/mp3spi.html - javax.sound provider for MP3 decoding and encoding based on JLayer
+  * [JOrbis]http://www.jcraft.com/jorbis/ - OGG Vorbis decoder and encoder
+  * [VorbisSPI]http://www.javazoom.net/vorbisspi/vorbisspi.html - Service provider for decoding OGG Vorbis
+  * [java-stream-player](https://github.com/goxr3plus/java-stream-player) - These classes are designed to be used in any application that needs simple features (play, stop, pause, resume, seek) to play audio file or stream. It's a high-level API over JavaSound API.
 
 ### Finally 
 
