@@ -1,5 +1,5 @@
 # java-sound-libraries
-The above libraries have originally been developed from [JavaZoom](http://www.javazoom.net) . Though they have stopped being devbeloped long time ago.
+The above libraries have originally been developed from [JavaZoom](http://www.javazoom.net) . Though they have stopped being developed long time ago.
 
 ### Can i combine the capabilities of all them in one ?
 Soore here is another repository which does exactly that [java-stream-player](https://github.com/goxr3plus/java-stream-player) providing you the ability to create a full Advanced Media Player like [XR3Player](https://github.com/goxr3plus/XR3Player)
